@@ -8,3 +8,4 @@ This folder contains sample images of industrial products for training and testi
 
 ## Source
 Images are collected from public domain sources for educational and PoC purposes.
+2
