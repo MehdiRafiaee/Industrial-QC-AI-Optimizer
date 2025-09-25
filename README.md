@@ -7,4 +7,11 @@ n AI-powered industrial quality control system with decision optimization for mi
 - [x] ML module: KNN classifier implemented
 - [x] Optimization module: GAMS decision model created
 - [x] Integration bridge: Python → GAMS data generator
-- [ ] End-to-end demo pipeline
+- [x] ✅ End-to-end demo pipeline completed
+
+## ▶️ How to Run the Demo
+
+1. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+python main_pipeline.py
