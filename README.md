@@ -1,6 +1,5 @@
-#1 Industrial-QC-AI-Optimizer
 ![CI Status](https://github.com/MehdiRafiaee/Industrial-QC-AI-Optimizer/actions/workflows/ci-basic.yml/badge.svg)
-
+# Industrial-QC-AI-Optimizer
 An AI-powered industrial quality control system with decision optimization for minimizing cost and maximizing efficiency
 
 ## 🧪 Current Progress
