@@ -1,0 +1,28 @@
+name: CI Basic Health Check
+
+on:
+  push:        # هر بار که روی هر شاخه ای push شد
+    branches: ["*"]
+  pull_request:  # و هر بار که Pull Request ساخته شد
+    branches: ["*"]
+
+jobs:
+  health-check:
+    runs-on: ubuntu-latest   # سیستم عامل ربات
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3   # ریپو را دانلود می‌کند
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"    # اگر لازم است تغییر دهی
+
+      - name: Install dependencies
+        run: |
+          if [ -f "requirements.txt" ]; then pip install -r requirements.txt; fi
+
+      - name: Health test (import main_pipeline)
+        run: |
+          python -c "import main_pipeline"
